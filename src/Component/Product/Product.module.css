@@ -1,0 +1,69 @@
+.Container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.card{
+  padding: 3.47rem;
+  background-color: #ffffff;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:4vw;
+  margin:2rem
+}
+
+.title{
+  font-size:x-large;
+  margin-bottom: 1rem;
+}
+
+.description{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 0.5rem;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  gap: 2vh;
+}
+
+.info h3{
+color: #003057;
+}
+
+.info .rating{
+  background-color: green;
+  width: fit-content;
+  padding: 0.2rem 0.4rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
+
+.info .price{
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #003057;
+}
+
+.info .desHeading{
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #262628;
+}
+
+.info .description{
+  line-height: 4vh;
+  color: #262628;
+}
+
+

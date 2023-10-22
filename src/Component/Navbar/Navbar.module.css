@@ -1,0 +1,124 @@
+.main {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.ham {
+  display: none;
+  font-size: 2rem;
+}
+
+.navLeft {
+  width: 8.3333vw;
+  height: 8vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 2vw;
+}
+
+.navRight input{
+  background-color: #f9f9f9;
+  padding: 0.5rem;
+  border: 2px solid #666666;
+  border-radius: 4px;
+}
+
+.navRight p {
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8vw;
+}
+
+.navRight p:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.link{
+  text-decoration: none;
+  color: #666666;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+
+@media only screen and (max-width: 870px) {
+  .main {
+    background-color: #003057;
+    height: 14vh;
+  }
+
+  .navLeft {
+    margin-left: 2vw;
+    width: 8vh;
+  }
+
+  .ham {
+    display: unset;
+    color: white;
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin-right: 2vw;
+  }
+
+  .navRight {
+    display: none;
+  }
+
+  .optionsContainer {
+    top: -17vh;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .optionsContainer {
+    position: absolute;
+    top: -50vh;
+    right: 0vw;
+    width: 98vw;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+    font-size: 0.9rem;
+    background-color: #ffffff;
+    padding: 1.25vw;
+  }
+
+  .optionsHeading {
+    gap: 2vh;
+    font-weight: 700;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+
+  .optionsLink {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+
+  .optionsLink p {
+    border-bottom: none;
+  }
+}

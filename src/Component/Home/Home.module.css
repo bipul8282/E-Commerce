@@ -1,0 +1,219 @@
+.Container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4vh 2vw;
+  gap: 2rem;
+  background-color: white;
+  margin-top: 10vh;
+}
+
+.category{
+  width: 9vw;
+  height: fit-content;
+  color: #ffffff;
+  background-color: #f9f9f9;
+  border: 1px solid #003057;
+  padding: 0.5rem;
+}
+
+.category select{
+  border: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 0.8rem;
+  color: #003057;
+  background-color: #f9f9f9;
+  font-weight: 600;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.25vw;
+  padding: 1.25vw;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 1.25vw;
+  width: 20.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25vw;
+  text-align: center;
+}
+
+.card:hover{
+  cursor: pointer;
+}
+
+.img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem 0rem;
+}
+
+.card p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.description{
+  display: flex;
+  justify-content: space-around;
+}
+
+.description p{
+  font-family: "Montserrat", sans-serif;
+}
+
+.description .title {
+  font-size: 0.8rem;
+  color: #262628;
+  width: 10vw;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.description .price{
+  font-weight: 900;
+  color: #003057;
+}
+
+.btnContainer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  border: 1px solid #003057;
+  height: 5.46vh;
+  font-family: "Montserrat", sans-serif;
+  color: #003057;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  background-color: #ffffff;
+  padding: 1.48vh 1vw;
+  margin-bottom: 2vw;
+}
+
+.btn:hover {
+  background-color: #003057;
+  color: white;
+  cursor: pointer;
+}
+
+.fav{
+  color: #003057;
+  font-size: 1.8rem;
+}
+
+.fav:hover{
+  cursor: pointer;
+}
+
+.quantity{
+  display: flex;
+  gap: 1vw;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 860px) {
+
+  .cardContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card{
+    width: 30vw;
+  }
+  
+  .title p {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .cardContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    width: 45vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100vw;
+  }
+}
+
+
+/* .cardContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.card{
+  padding: 2rem 0rem;
+  background-color: lightgray;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px gray;
+  gap: 2rem;
+}
+
+.img{
+  border: 4px solid white;
+  border-radius: 10px;
+}
+
+.description{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title{
+  width:8vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+}
+.price{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1rem;
+  color: gray;
+} */

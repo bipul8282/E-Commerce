@@ -1,0 +1,54 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  margin: 15vh 0vw;
+  border: 2px solid #003057;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+td,
+th {
+  text-align: center;
+  border: 1px solid #003057;
+  padding: 0.5rem;
+}
+
+.quantity {
+  display: flex;
+  gap: 1vw;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.amount {
+  padding: 0.5rem;
+  font-weight: 900;
+  color: #003057;
+}
+
+.btn {
+  border: 1px solid #003057;
+  height: 5.46vh;
+  font-family: "Montserrat", sans-serif;
+  color: #003057;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  background-color: #ffffff;
+  padding: 1.48vh 1vw;
+  margin-bottom: 2vw;
+}
+
+.btn:hover {
+  background-color: #003057;
+  color: white;
+  cursor: pointer;
+}
